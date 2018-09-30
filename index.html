@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!---viewport--->
+      <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <!---title--->
+      <title>IMDb</title>
+      <!---css file--->
+      <link rel="stylesheet" href="index.css">
+      
+      <!---bootstrap--->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+
+  <body>
+        <div class="container">
+          <div class="jumbotron">
+          <h1 class="display-4">IMDb movie search</h1>
+           <hr class="my-4">
+             <div class="jumbotron">
+            <h1 class="display-4">by TITLE</h1>
+            <hr class="my-4">
+            <form>
+                      <div class="form-group">
+                      <label for="title">TITLE:</label>
+                      <input type="text" class="form-control" id="inputmovie" placeholder="movie title...">
+                      </div>
+                      <button type="button" class="btn btn-primary" id="searchmovie">search</button>
+                      <input class="btn btn-primary" type="reset" value="Reset">
+            </form>   
+
+                   <div class="card mb-3 show" id="content">
+                
+                      <div class="card-body" id="don">
+                          <h5 class="card-title" id="movietitle"></h5>
+                          <p class="card-text" id="actors">ACTORS:-</p>
+                          <p class="card-text" id="plot">PLOT:-</p>
+                          <p class="card-text" id="imdbid">IMDbid:-</p>
+                          <ul class="list-group list-group-flush">
+                          <li class="list-group-item" id="released"><h2>Released:</h2></li>
+                          <li class="list-group-item" id="runtime"><h2>Runtime:</h2></li>
+                          <li class="list-group-item" id="year"><h2>year:</h2></li>
+                          <li class="list-group-item" id="writer"><h2>writer:</h2></li>
+                          <li class="list-group-item" id="director"><h2>director:</h2></li>
+                          <li class="list-group-item" id="rated"><h2>Rated:</h2></li>
+                           <li class="list-group-item" id="ratings"><h2>Ratings:</h2></li>
+                          
+                          <li class="list-group-item" id="lang"><h2>language:</h2></li>
+                          <li class="list-group-item" id="country"><h2>country:</h2></li>
+                          <li class="list-group-item" id="boxoffice"><h2>boxoffice:</h2></li>
+                          <li class="list-group-item" id="production"><h2>production:</h2></li>
+                          <li class="list-group-item" id="imdbrating"><h2>imdbRating:</h2></li>
+                          <li class="list-group-item" id="imdbvotes"><h2>imdbVotes:</h2></li>
+                          <li class="list-group-item" id="website"><h2>website:<a></a></h2></li>
+                          <li class="list-group-item" id="awards"><h2>awards:</h2></li>
+                          <li class="list-group-item" id="genre"><h2>genre:</h2></li>
+                          <li class="list-group-item" id="type"><h2>type:</h2></li>
+                          <li class="list-group-item" id="dvd"><h2>dvd:</h2></li>
+                          <li class="list-group-item" id="response"><h2>response:</h2></li>
+                        </ul>
+
+                     </div>
+                </div>
+
+
+          </div>
+
+        </div>
+
+         <div class="jumbotron">
+            <h1 class="display-4">by YEAR</h1>
+            <hr class="my-4">
+            <form>
+                      <div class="form-group">
+                      <label for="title">YEAR:</label>
+                      <input type="text" class="form-control" id="inputyear" placeholder="year...">
+                      </div>
+                      <button type="button" class="btn btn-primary" id="searchmoviey">search</button>
+                      <input class="btn btn-primary" type="reset" value="Reset">
+            </form>
+            <div class="card mb-3 show" id="contenty">
+                
+                      <div class="card-body" id="dony">
+                          <h5 class="card-title" id="movietitley"></h5>
+                          <p class="card-text" id="actorsy">ACTORS:-</p>
+                          <p class="card-text" id="ploty">PLOT:-</p>
+                          <p class="card-text" id="imdbidy">IMDbid:-</p>
+                          <ul class="list-group list-group-flush">
+                          <li class="list-group-item" id="releasedy"><h2>Released:</h2></li>
+                          <li class="list-group-item" id="runtimey"><h2>Runtime:</h2></li>
+                          <li class="list-group-item" id="yeary"><h2>year:</h2></li>
+                          <li class="list-group-item" id="writery"><h2>writer:</h2></li>
+                          <li class="list-group-item" id="directory"><h2>director:</h2></li>
+                          <li class="list-group-item" id="ratedy"><h2>Rated:</h2></li>
+                           <li class="list-group-item" id="ratingsy"><h2>Ratings:</h2></li>
+                          
+                          <li class="list-group-item" id="langy"><h2>language:</h2></li>
+                          <li class="list-group-item" id="countryy"><h2>country:</h2></li>
+                          <li class="list-group-item" id="boxofficey"><h2>boxoffice:</h2></li>
+                          <li class="list-group-item" id="productiony"><h2>production:</h2></li>
+                          <li class="list-group-item" id="imdbratingy"><h2>imdbRating:</h2></li>
+                          <li class="list-group-item" id="imdbvotesy"><h2>imdbVotes:</h2></li>
+                          <li class="list-group-item" id="websitey"><h2>website:</h2></li>
+                          <li class="list-group-item" id="awardsy"><h2>awards:</h2></li>
+                          <li class="list-group-item" id="genrey"><h2>genre:</h2></li>
+                          <li class="list-group-item" id="typey"><h2>type:</h2></li>
+                          <li class="list-group-item" id="dvdy"><h2>dvd:</h2></li>
+                          <li class="list-group-item" id="responsey"><h2>response:</h2></li>
+                        </ul>
+
+                     </div>
+                </div>
+   
+          </div>
+
+          <div class="jumbotron">
+            <h1 class="display-4">by IMDb ID</h1>
+            <hr class="my-4">
+            <form>
+                      <div class="form-group">
+                      <label for="title">IMDbid:</label>
+                      <input type="text" class="form-control" id="inputimdbid" placeholder="imdbid...">
+                      </div>
+                      <button type="button" class="btn btn-primary" id="searchmoviei">search</button>
+                      <input class="btn btn-primary" type="reset" value="Reset">
+            </form>
+            <div class="card mb-3 show" id="contenti">
+                
+                      <div class="card-body" id="doni">
+                          <h5 class="card-title" id="movietitlei"></h5>
+                          <p class="card-text" id="actorsi">ACTORS:-</p>
+                          <p class="card-text" id="ploti">PLOT:-</p>
+                          <p class="card-text" id="imdbidi">IMDbid:-</p>
+                          <ul class="list-group list-group-flush">
+                          <li class="list-group-item" id="releasedi"><h2>Released:</h2></li>
+                          <li class="list-group-item" id="runtimei"><h2>Runtime:</h2></li>
+                          <li class="list-group-item" id="yeari"><h2>year:</h2></li>
+                          <li class="list-group-item" id="writeri"><h2>writer:</h2></li>
+                          <li class="list-group-item" id="directori"><h2>director:</h2></li>
+                          <li class="list-group-item" id="ratedi"><h2>Rated:</h2></li>
+                           <li class="list-group-item" id="ratingsi"><h2>Ratings:</h2></li>
+                          
+                          <li class="list-group-item" id="langi"><h2>language:</h2></li>
+                          <li class="list-group-item" id="countryi"><h2>country:</h2></li>
+                          <li class="list-group-item" id="boxofficei"><h2>boxoffice:</h2></li>
+                          <li class="list-group-item" id="productioni"><h2>production:</h2></li>
+                          <li class="list-group-item" id="imdbratingi"><h2>imdbRating:</h2></li>
+                          <li class="list-group-item" id="imdbvotesi"><h2>imdbVotes:</h2></li>
+                          <li class="list-group-item" id="websitei"><h2>website:</h2></li>
+                          <li class="list-group-item" id="awardsi"><h2>awards:</h2></li>
+                          <li class="list-group-item" id="genrei"><h2>genre:</h2></li>
+                          <li class="list-group-item" id="typei"><h2>type:</h2></li>
+                          <li class="list-group-item" id="dvdi"><h2>dvd:</h2></li>
+                          <li class="list-group-item" id="responsei"><h2>response:</h2></li>
+                        </ul>
+
+                     </div>
+                </div>
+   
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+      
+
+      
+      
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+
+    
+      
+
+  </body>
+
+       
+
+</html>
